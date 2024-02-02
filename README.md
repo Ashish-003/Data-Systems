@@ -1,4 +1,4 @@
-## This repo consists creation of C++ Database project done in Data Systems course under Prof Kamal Karlapalem
+## This repo consists creation of C++ Database from scratch done in Data Systems course under Prof Kamal Karlapalem 
 # SimpleRA
 
 ## Compilation Instructions
