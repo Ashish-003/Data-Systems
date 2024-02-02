@@ -1,0 +1,32 @@
+LOAD gb_t1
+1_A_max_C_res <- GROUP BY A FROM gb_t1 RETURN MAX(C)
+EXPORT 1_A_max_C_res
+1_C_sum_B_res <- GROUP BY C FROM gb_t1 RETURN SUM(B)
+EXPORT 1_C_sum_B_res
+1_A_min_A_res <- GROUP BY A FROM gb_t1 RETURN MIN(A)
+EXPORT 1_A_min_A_res
+1_A_avg_C_res <- GROUP BY A FROM gb_t1 RETURN AVG(C)
+EXPORT 1_A_avg_C_res
+
+LOAD gb_t11
+2_A_max_H_res <- GROUP BY A FROM gb_t11 RETURN MAX(H)
+EXPORT 2_A_max_H_res
+2_C_sum_B_res <- GROUP BY C FROM gb_t11 RETURN SUM(B)
+EXPORT 2_C_sum_B_res
+2_F_min_G_res <- GROUP BY F FROM gb_t11 RETURN MIN(G)
+EXPORT 2_F_min_G_res
+2_G_avg_I_res <- GROUP BY G FROM gb_t11 RETURN AVG(I)
+EXPORT 2_G_avg_I_res
+
+LOAD gb_t2
+3_AA_max_CB_res <- GROUP BY A_A FROM gb_t2 RETURN MAX(C_B)
+EXPORT 3_AA_max_CB_res
+3_EA_sum_BD_res <- GROUP BY E_A FROM gb_t2 RETURN SUM(B_D)
+EXPORT 3_EA_sum_BD_res
+3_BC_min_HC_res <- GROUP BY B_C FROM gb_t2 RETURN MIN(H_C)
+EXPORT 3_BC_min_HC_res
+3_ED_avg_DD_res <- GROUP BY E_D FROM gb_t2 RETURN AVG(D_D)
+EXPORT 3_ED_avg_DD_res
+
+QUIT
+
